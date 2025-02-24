@@ -1,0 +1,39 @@
+1) 使用过程中的问题
+① ssh-keygen -t rsa -C "邮箱"
+
+git SSH Key 报错Bad escape character 'ygen'
+
+https://blog.csdn.net/WilliamSun0122/article/details/70339931
+
+② git clone 代理问题：
+
+Failed to connect to github.com port 443 after 21080 ms: Could not connect to server
+
+https://zhuanlan.zhihu.com/p/648164862
+https://blog.csdn.net/weixin_43589323/article/details/137049226
+
+git config --global http.proxy http://127.0.0.1:7891
+git config --global https.proxy http://127.0.0.1:7891
+【7891】是自己的端口号
+
+2) 使用命令：
+① 上传文件 
+git add .
+git commit -m ' '
+git push
+
+
+② 创建readme文件
+vim readme
+cat readme
+
+③ 其它常用命令
+
+i) 查看提交状态
+git statues
+git logs
+
+ii) 初次创建本地仓库 .git文件
+git init
+
+
